@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --bg-color:#072044;
+    --main-color:#FFBC09;
+    --text-color:#FFFFFF;
+    --text-main-color:#000000;
+    --ligth-bg-color:#F7F7F7;
+    --light-text-color:#9D9D9D;
+    --over-color:#DF9C00;
+    --foot-color:#07294D;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.sidebar{
+    float: left;
+    width: 16%;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: var(--bg-color);
+}
+.sidebar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+   
+}
+.sidebar .logo #icon{
+    font-size: 33px;
+    color: var(--main-color);
+}
+.sidebar .logo .heading h1{
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-left: 2px;
+}
+.sidebar .logo .heading span{
+    color: var(--main-color);
+    font-weight: 800;
+}
+.main{
+    height: 90vh;
+    position: relative;
+    list-style: none;
+    
+}
+.main li{
+    padding: 7px;
+    padding-left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.main li:hover,.active{
+    background: #DF9C00;
+}
+.main a{
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.main a span{
+    overflow: hidden;
+}
+.main a i{
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.logout{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+}
+.wapper{
+    width: 84%;
+    float: right;
+    height: 100vh;
+}
+.wapper .header {
+    width: 100%;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    height: 8vh;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.wapper .header i{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.wapper .header .navbar a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--bg-color);
+}
+.wapper .container{
+    width: 100%;
+    height: 92vh;
+    padding: 15px;
+    background-color: #9D9D9D;
+}
+.container .con-main{
+    width: 100%;
+    height: 100%;
+   
+}
+.con-main .cards{
+    width: 100%;
+    height: 20vh;
+    
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+
+}
+.cards .card{
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards .card:hover{
+    transform: translateY(-5px);
+}
+.card .title h2{
+    color: var(--bg-color);
+    padding-bottom: 10px;
+}
+.card .title p{
+
+}
+.card .icons{
+    color: #fff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background-color: red;
+    
+}
+.cards #c1{
+    background-color: rgb(251, 233, 233);
+}
+.cards #c2{
+    background-color: rgb(254, 226, 254);
+}
+.cards #c3{
+    background-color: rgb(254, 226, 254);
+}
+.cards #c4{
+    background-color: rgb(254, 226, 254);
+}
+/**************************************ststus*************************************/
+.container .status-main{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.status-main table, td, th {
+    border: none;
+  }
+.status-main table{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+.status-main table th{
+    height: 50px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 10px;
+    border:none;
+    background-color: #FFBC09;
+   
+}
+.status-main #r1{
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    color: #fff;
+   
+}
+.status-main #t1{
+    border-radius: 10px 0px 0px 0px;
+}
+.status-main #t2{
+    border-radius: 0px 10px 0px 0px;
+    width: 200px;
+}
+.status-main table tr td{
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+}
+.status-main td button{
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.status-main #approve{
+    background-color: rgb(88, 160, 88);
+    color:white;
+}
+.status-main #reject{
+    background-color: red;
+    color: white;
+}
+/******************************************search user****************************************/
+.search_main{
+        width: 100%;
+        height: 20vh;
+        background: var(--text-color);
+        border-radius: 10px;
+        
+       padding: 10PX;
+        
+}
+.search_main form
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.search_main label{
+     font-size: 18px;
+     font-weight: 500;
+     color: #072044;
+     margin: 20px;
+     text-transform: capitalize;
+}
+.search_main input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    
+    }
+.search_main .btn{
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 22px;
+    height: 40px;
+}
+.search_main .btn button{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.search_table{
+    width:100%;
+    height: fit-content;
+    background-color: #ffffff;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.search_table table, td, th {
+    border: none;
+  }
+.search_table table{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+.search_table table th{
+    height: 50px;
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 10px;
+    border:none;
+    background-color: #FFBC09;
+   
+}
+.search_table #r1{
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    color: #fff;
+   
+}
+.search_table #t1{
+    border-radius: 10px 0px 0px 0px;
+}
+.search_table #t2{
+    border-radius: 0px 10px 0px 0px;
+    width: 200px;
+}
+.search_table table tr td{
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+}
+/************************************edit_main**********************************/
+.edit_main{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+.edit_main h3{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.edit_main .input_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.edit_main form .input_box label{
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.edit_main form .input_box input, select{
+      height: 40px;
+      width: 100%;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      font-size: 16px;
+}
+
+
+.edit_main form  button{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: var(--main-color);
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.edit_main form  .btn{
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+}
